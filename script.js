@@ -7,7 +7,7 @@ class Api {
 		let result = '';
 
 		result = template.replace(/%(\w+)%/g, (match, key) => object[key] || match);
-
+		result = result.replace(/\s/g, "%20");
 		return result;
 	}
 }
