@@ -60,6 +60,3 @@ let api_paths = api_path_templates.map((api_path_template) => {
 });
 
 console.log(JSON.stringify(api_paths));
-
-// Ожидаемый результат
-let expected_result = ["/api/items/20/John%20Dow", "/api/items/20/QA", "/api/items/20/100"];
